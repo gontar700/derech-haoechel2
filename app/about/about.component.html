@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<section id="header">
+  <div class="container">
+      <div class="strip">
+          <div class="menu">
+        <div class="wrod1 word">
+          <a [routerLink]="['/homepage']" (click)="goTo('header')">בית</a>
+        </div>
+        <div class="word2 word">
+          <a [routerLink]="['/menu']">תפריט</a>
+        </div>
+        <div class="word3 word">
+          <a [routerLink]="['/about']">אודות</a>
+        </div>
+        <div class="word4 word">
+          <a [routerLink]="['/contact']">צור קשר</a>
+        </div>
+      </div>
+          <div class="mish">
+        משלוחים 077-414-2015
+      </div>
+      </div>
+  </div>
+</section>
+<section id="about">
+  <div class="container">
+    <h3>אודותינו</h3>
+    <P>
+      מלי, בעלת המסעדה, היא בשלנית של אוכל ביתי זה יותר מ- 40 שנים. היא למדה את סודות המקצוע מאביה כבת לשושלת של מסעדנים. אביה עלה לארץ עם משפחתו מתורכיה בשנות ה- 50 של המאה הקודמת. הוא התגורר, יחד עם משפחתו, בבניין מתפרות ביפו. כל דיירי הבניין זכו להינות מכישרון הבישול שלו והוא היה מקפיד להאכיל את כולם. היום, כמעט 70 שנה אחרי, בתו מאכילה קהל לקוחות רחב שפוקד את המסעדה ברמת החייל, כמאין סגירת מעגל. מלי גם מציעה ללקוחותיה שירות משלוחים עד הבית. ניתן להזמין את המנות באתר. תהנו !
+    </P>
+    <div class="slider">
+      <img src="../../assets/11.png" class="pic11 img1" [@pic11]="pic11">
+      <img src="../../assets/12.png" class="pic12 img1" [@pic12]="pic12">
+      <img src="../../assets/13.png" class="pic13 img1" [@pic13]="pic13">
+      <img src="../../assets/14.png" class="pic14 img1" [@pic14]="pic14">
+      <img src="../../assets/15.png" class="pic15 img1">
+    </div>
+  </div>
+</section>

@@ -1,0 +1,697 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* RESET CSS BEGIN */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: middle;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    direction:rtl;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*RESET CSS END*/
+
+
+/* HELPER CLASSES BEGIN */
+.alignLeft {
+    float: left;
+}
+
+.alignRight {
+    float: right;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+strong,
+b {
+    font-weight: 700;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p,
+ul li,
+ol li {
+    font-size: 17px;
+    line-height: 24px;
+}
+
+/*HELPER CLASSES END*/
+
+
+/* GENERAL RULES*/
+* {
+    box-sizing: border-box;
+}
+
+/* Fonts */
+@font-face {
+    font-family: fblight;
+    src: url(../../assets/FBKARLIBACH-LIGHT.OTF);
+}
+@font-face {
+    font-family: fbbold;
+    src: url(../../assets/FBKARLIBACH-BOLD.OTF);
+}
+
+/* Classes */
+.container
+{
+    max-width:1280px;
+    width:100%;
+    height: auto;
+    margin:0 auto;
+    position: relative;
+    overflow: hidden;
+}
+/*  header section  */
+
+#header .strip
+{
+    background: #fff;
+    width:100%;
+    height:65px;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+}
+#header .menu
+{
+    float:right;
+    margin: 20px 0;
+}
+#header .word
+{
+    display: inline-block;
+    padding: 10px;
+    font-family: "fblight";
+    border-left: 1px #2f2f2f solid;
+    line-height: 1px;
+
+}
+#header .word a
+{
+    cursor: pointer;
+    text-decoration: none;
+}
+#header .word:hover
+{
+    border-bottom: 10px solid #c69c6d;
+}
+#header .mish
+{
+    float: left;
+    margin: 20px 20px;
+    font-family: "fblight";
+}
+#menu
+{
+    background-image: url("../../assets/menu_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#menu h3
+{
+    margin: 76px 520px 48px 0;
+    font-size: 50px;
+    font-family: "Myriad Hebrew";
+    text-decoration: underline;
+
+}
+#menu .portfolio1
+{
+    width: inherit;
+    height: 961px;
+    margin-bottom: 54px;
+}
+#menu .row
+{
+    width: 100%;
+    height: 320px;
+    direction: ltr;
+}
+#menu .img
+{
+    width: 33.33%;
+    height: inherit;
+    overflow: hidden;
+    float: left;
+}
+
+#menu .portfolio2
+{
+    width: auto;
+    height:320px;
+    margin-bottom: 115px;
+}
+#menu .white_bg
+{
+    position: absolute;
+    top: 162px;
+    left: 0px;
+    width: inherit;
+    height: 959px;
+    background-image: url("../../assets/white_bg.png");
+}
+#menu .visitcard_bg
+{
+    position: absolute;
+    width: 750px;
+    height: 500px;
+    background-image: url("../../assets/visitcard_bg.png");
+    top: 210px;
+    left: 310px;
+}
+#menu .wraper
+{
+    direction: rtl;
+    margin: 30px 394px 19px 12px;
+    color:#262626;
+    width: 346px;
+    height: 389px;
+
+}
+#menu .x_button
+{
+    position:absolute;
+    top:12px;
+    left:700px;
+}
+#menu .headline
+{
+    display: inline-block;
+}
+#menu h2
+{
+    color: #000;
+    font-size:30px;
+    font-family: "Myriad Hebrew";
+    float:right;
+}
+#menu span
+{
+    font-size: 20px;
+    margin: 13px 24px 0 0;
+    font-family: fblight;
+    float: left;
+    margin-bottom: 32px;
+}
+#menu p.teor
+{
+    height: 223px;
+    margin: 0 0 38px 0;
+}
+#menu .sub
+{
+    width:348px;
+    height: 27px;
+    display: inline-block;
+}
+#menu .social
+{
+    margin-left: 9px;
+    float: right;
+}
+#menu p
+{
+    float: right;
+    margin-right: 74px;
+    font-size: 16px;
+    font-family: fblight;
+}
+#menu .up
+{
+    position: absolute;
+    top: 353px;
+    left: 69px;
+}
+#menu .number
+{
+    position: absolute;
+    top: 353px;
+    left: 49px;
+    font-size: 29px;
+    font-family: "fblight";
+
+}
+#menu .down
+{
+    position: absolute;
+    top: 353px;
+    left: 20px;
+}
+#menu .price
+{
+    position: absolute;
+    top: 401px;
+    left: 20px;
+    color: #262626;
+    font-family: "fblight";
+    font-size: 18px;
+}
+#menu .mishloah
+{
+    position: absolute;
+    top:436px;
+    left:0px;
+}
+#menu .mishloah_text
+{
+    position: absolute;
+    top: 458px;
+    left: 33px;
+    font-family: fblight;
+    font-size: 23px;
+    color: #fff;
+}
+#menu .mishloah_text:hover
+{
+    cursor: pointer;
+}
+#menu .switch_left
+{
+    position: absolute;
+    top: 439px;
+    left: 279px;
+}
+#menu .switch_right
+{
+    position: absolute;
+    top: 439px;
+    left: 1076px;
+}
+.img:hover
+{
+    cursor: pointer;
+}
+#menu img
+{
+    cursor: pointer;
+}
+#menu .details_bg
+{
+    position: absolute;
+    background-image: url("../../assets/bg_kartis_details1.png");
+    width: 750px;
+    height: 500px;
+    top: 210px;
+    left: 310px;
+}
+#menu .details_bg2
+{
+    position: absolute;
+    background-image: url("../../assets/bg_kartis_details2.png");
+    width: 750px;
+    height: 500px;
+    top: 210px;
+    left: 310px;
+}
+#menu .details_bg h2
+{
+    position: absolute;
+    top: 99px;
+    right:321px;
+    font-size: 24px;
+    color: #c69c6d;
+    font-family: "Myriad Hebrew";
+}
+#menu .input
+{
+    position: absolute;
+    right: 241px;
+    width: 270px;
+    height: 42px;
+    font-size: 16px;
+    font-family: "Myriad Hebrew";
+    color: #2e2e2e;
+    padding: 15px 10px 15px 0;
+    background: #fff;
+}
+#menu #firstName
+{
+    top: 142px;
+}
+#menu #email
+{
+    top: 194px;
+}
+#menu #phone
+{
+    top: 246px;
+}
+#menu #address
+{
+    top: 298px;
+}
+#menu #city
+{
+    top: 350px;
+}
+#menu .price2
+{
+    position: absolute;
+    top: 392px;
+    right: 540px;
+    font-family: "Myriad Hebrew";
+    font-size: 18px;
+    color: #2e2e2e;
+}
+#menu .price_val
+{
+    position: absolute;
+    top: 384px;
+    left: 44px;
+    font-family: "fblight";
+    font-size: 30px;
+    color: #2e2e2e;
+}
+#menu .price_val_sh
+{
+    position: absolute;
+    top: 384px;
+    left: 17px;
+    font-family: "fblight";
+    font-size: 15px;
+    color: #2e2e2e;
+}
+.inst_details
+{
+    position: absolute;
+    top: 460px;
+    right: 26px;
+}
+.goog_details
+{
+    position: absolute;
+    top: 460px;
+    right: 66px;
+}
+.fb_details
+{
+    position: absolute;
+    top: 460px;
+    right: 106px;
+}
+.haz_details
+{
+    position: absolute;
+    top: 436px;
+    left: 1px;
+}
+#menu .details_bg2 h2
+{
+    position: absolute;
+    top:100px;
+    right: 310px;
+    color: #c69c6d;
+    font-size: 24px;
+    font-family: "Myriad Hebrew";
+}
+#menu .details_bg2 .input
+{
+    position: absolute;
+    padding-right: 12px;
+    font-size: 16px;
+    font-family: "Myriad Hebrew";
+}
+#menu .short_input
+{
+    width: 129px;
+    height: 40px;
+}
+#menu .long_input
+{
+    width: 270px;
+    height: 40px;
+}
+#menu #sug_kartis
+{
+
+    top:148px;
+    right:238px;
+}
+#menu #payments
+{
+    top:148px;
+    right: 380px;
+}
+#menu #card_number
+{
+    top:199px;
+    right:238px;
+}
+#menu .creditExmp
+{
+    position: absolute;
+    top: 194px;
+    right: 450px;
+    color: #c69c6d;
+    font-size: 15px;
+    font-family: "Myriad Hebrew";
+}
+#menu #cvv
+{
+    top:250px;
+    right:238px;
+}
+#menu #month
+{
+    top:301px;
+    right:238px;
+}
+#menu #year
+{
+    top:301px;
+    right:380px;
+}
+#menu .arrow
+{
+    position: absolute;
+}
+#menu #arrow1
+{
+    top: 157px;
+    right: 334px;
+}
+#menu #arrow2
+{
+    top: 157px;
+    right: 478px;
+}
+#menu #arrow3
+{
+    top: 311px;
+    right: 331px;
+}
+#menu #arrow4
+{
+    top: 311px;
+    right: 476px;
+}
+.dropdown-content{
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9999;
+    overflow: hidden;
+}
+#menu .dropdown-content p
+{
+
+    margin: 9px 15px;
+    float: right;
+    width: inherit;
+    padding: 4px;
+    height: 25px;
+}
+#menu .dropdown-content p:hover
+{
+    background: #5bc0de;
+}
+#dropdown1
+{
+    top: 195px;
+    right: 256px;
+    width: 110px;
+}
+#dropdown2
+{
+    top: 195px;
+    right: 463px;
+    width: 45px;
+}
+#dropdown3
+{
+    top: 353px;
+    right: 238px;
+    width: 159px;
+}
+#dropdown4
+{
+    top: 353px;
+    right: 380px;
+    width: 162px;
+}
+#menu .order_summary
+{
+    position: absolute;
+    background: #fff;
+    border: 1px solid #c69c6d;
+    width: 750px;
+    height: 500px;
+    top: 210px;
+    left: 310px;
+}
+#menu .order_summary h2
+{
+    color: #c69c6d;
+    position: absolute;
+    right: 263px;
+    top: 36px;
+}
+#menu .order_summary span
+{
+    position: absolute;
+    right: 263px;
+    top: 86px;
+    color: #c69c6d;
+}
+#menu .right
+{
+
+    float: right;
+}
+#menu .product
+{
+    width: 600px;
+    position: absolute;
+    right: 100px;
+}
+#menu #product_one
+{
+    top:147px;
+}
+#menu #product_two
+{
+    top:197px;
+}
+#menu #product_three
+{
+    top:247px;
+}
+#menu .final
+{
+    position: absolute;
+    top: 388px;
+    right: 577px;
+    width: 60px;
+    padding-top: 15px;
+    padding-right: 2px;
+    border-top: 1px solid #2f2f2f;
+}
+#menu .final2
+{
+    position: absolute;
+    top: 388px;
+    right: 607px;
+    width: 60px;
+    padding-top: 15px;
+    padding-right: 2px;
+}
+#menu .credit
+{
+    position: absolute;
+
+    top: 458px;
+}
+#menu #credit
+{
+    right: 24px;
+}
+#menu #credit4
+{
+    right: 239px;
+}
+#menu .btn
+{
+    background: #c69c6d;
+    width: 70px;
+    height: 42px;
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    font-family: "fblight";
+    font-size: 25px;
+    margin: 0 16px 0 0;
+    position: absolute;
+    top: 444px;
+    right: 650px;
+}
+#menu .thank-you
+{
+    position: absolute;
+    top: 220px;
+    right: 150px;
+    color: #000;
+    font-size: 50px;
+    font-family: "fbbold";
+    font-style: italic;
+}

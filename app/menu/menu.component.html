@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<section id="header">
+    <div class="container">
+        <div class="strip">
+            <div class="menu">
+                <div class="wrod1 word">
+                    <a [routerLink]="['/homepage']" (click)="goTo('header')">בית</a>
+                </div>
+                <div class="word2 word">
+                    <a [routerLink]="['/menu']">תפריט</a>
+                </div>
+                <div class="word3 word">
+                    <a [routerLink]="['/about']">אודות</a>
+                </div>
+                <div class="word4 word">
+                    <a [routerLink]="['/contact']">צור קשר</a>
+                </div>
+            </div>
+            <div class="mish">
+                משלוחים 077-414-2015
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="menu">
+    <div class="container">
+            <h3>תפריט חלבי</h3>
+        <div class="portfolio1">
+            <!-- row1 ------------------------------------------------------>
+            <div class="row">
+                <div class="img" id="img1">
+                    <img src="../../assets/pic_port1.png" (click)="fmana1()">
+                </div>
+                <div class="img" id="img2">
+                    <img src="../../assets/pic_port2.png" (click)="fmana2()">
+                </div>
+                <div class="img" id="img3">
+                    <img src="../../assets/pic_port3.png" (click)="fmana3()">
+                </div>
+            </div>
+            <!-- row2 ------------------------------------------------------>
+            <div class="row">
+                <div class="img" id="img1">
+                    <img src="../../assets/pic_port1.png" (click)="fmana1()">
+                </div>
+                <div class="img" id="img2">
+                    <img src="../../assets/pic_port2.png" (click)="fmana2()">
+                </div>
+                <div class="img" id="img3">
+                    <img src="../../assets/pic_port3.png" (click)="fmana3()">
+                </div>
+            </div>
+            <!-- row3 ------------------------------------------------------>
+            <div class="row">
+                <div class="img" id="img1">
+                    <img src="../../assets/pic_port1.png" (click)="fmana1()">
+                </div>
+                <div class="img" id="img2">
+                    <img src="../../assets/pic_port2.png" (click)="fmana2()">
+                </div>
+                <div class="img" id="img3">
+                    <img src="../../assets/pic_port3.png" (click)="fmana3()">
+                </div>
+            </div>
+        </div>
+        <!-- white_bg animation ---------------------------------------------->
+        <div class="white_bg" [@general2]="general2"></div>
+        <!-- animation ------------------------------------------------------->
+        <h3>תפריט בשרי</h3>
+        <div class="portfolio2">
+            <div class="row">
+                <div class="img" id="img11">
+                    <img src="../../assets/pic_port1.png">
+                </div>
+                <div class="img" id="img12">
+                    <img src="../../assets/pic_port2.png">
+                </div>
+                <div class="img" id="img13">
+                    <img src="../../assets/pic_port3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- arrows animation ---------------------------------------------------->
+    <img src="../../assets/switch_kartis_arrow_left.png" class="switch_left" [@general]="general" (click)="arrowMove(-1)">
+    <img src="../../assets/switch_kartis_arrow_right.png" class="switch_right" [@general]="general" (click)="arrowMove(1)">
+    <!-- visit card1 animation ----------------------------------------------->
+    <div class="visitcard_bg" [@mana1]="mana1">
+            <div class="wraper">
+                <img src="../../assets/x_button.png" class="x_button" (click)="abort()">
+                <div class="headline">
+                    <h2>
+                    ספגטי בולונז
+                    </h2>
+                    <span>
+                מנת שף
+                    </span>
+                </div>
+                <p class="teor">
+                פסטה ברוטב בולונז שמתבשל לו במשך שעה וחצי על אש קטנה עם יין ... פסטה איכותית,בצל, שום, שמן זית, עגבניות מרוסקות, סוכר מלח ופלפל גרוס.
+                </p>
+                <div class="sub">
+                    <div class="social">
+                        <a href="/">
+                            <img src="../../assets/inst_kartis_button.png">
+                        </a>
+                    </div>
+                    <div class="social">
+                    <a href="/">
+                        <img src="../../assets/goog_kartis_button.png">
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="/">
+                        <img src="../../assets/fb_kartis_button.png">
+                    </a>
+                </div>
+                <p>
+                    כמות מנות:
+                </p>
+                <img src="../../assets/up_amount_manot_button.png" class="up" (click)="up('number1')">
+                <div class="number" id="number1">
+                    0
+                </div>
+                <img src="../../assets/down_amount_manot_button.png" class="down" (click)="down('number1')">
+            </div>
+                <p class="price">
+                   45 ש״ח
+                </p>
+                <img src="../../assets/hazmaen_mishloah.png" class="mishloah" (click)="hazmen()">
+                <div class="mishloah_text" (click)="hazmen()" class="mishloah_text">
+                     הזמן משלוח
+                </div>
+        </div>
+    </div>
+    <!-- visit card2 animation ----------------------------------------------->
+    <div class="visitcard_bg" [@mana2]="mana2">
+        <div class="wraper">
+            <img src="../../assets/x_button.png" class="x_button" (click)="abort()">
+            <div class="headline">
+                <h2>
+                    ספגטי בולונז2
+                </h2>
+                <span>
+                מנת שף
+                    </span>
+            </div>
+            <p class="teor">
+                פסטה ברוטב בולונז שמתבשל לו במשך שעה וחצי על אש קטנה עם יין ... פסטה איכותית,בצל, שום, שמן זית, עגבניות מרוסקות, סוכר מלח ופלפל גרוס.
+            </p>
+            <div class="sub">
+                <div class="social">
+                    <a href="/">
+                        <img src="../../assets/inst_kartis_button.png">
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="/">
+                        <img src="../../assets/goog_kartis_button.png">
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="/">
+                        <img src="../../assets/fb_kartis_button.png">
+                    </a>
+                </div>
+                <p>
+                    כמות מנות:
+                </p>
+                <img src="../../assets/up_amount_manot_button.png" class="up" (click)="up('number2')">
+                <div class="number" id="number2">
+                    0
+                </div>
+                <img src="../../assets/down_amount_manot_button.png" class="down" (click)="down('number2')">
+            </div>
+            <p class="price">
+                42 ש״ח
+            </p>
+            <img src="../../assets/hazmaen_mishloah.png" class="mishloah" (click)="hazmen()">
+            <div class="mishloah_text" (click)="hazmen()" class="mishloah_text">
+                הזמן משלוח
+            </div>
+        </div>
+    </div>
+    <!-- visit card3 animation ----------------------------------------------->
+    <div class="visitcard_bg" [@mana3]="mana3">
+        <div class="wraper">
+            <img src="../../assets/x_button.png" class="x_button" (click)="abort()">
+            <div class="headline">
+                <h2>
+                    ספגטי בולונז3
+                </h2>
+                <span>
+                מנת שף
+                    </span>
+            </div>
+            <p class="teor">
+                פסטה ברוטב בולונז שמתבשל לו במשך שעה וחצי על אש קטנה עם יין ... פסטה איכותית,בצל, שום, שמן זית, עגבניות מרוסקות, סוכר מלח ופלפל גרוס.
+            </p>
+            <div class="sub">
+                <div class="social">
+                    <a href="/">
+                        <img src="../../assets/inst_kartis_button.png">
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="/">
+                        <img src="../../assets/goog_kartis_button.png">
+                    </a>
+                </div>
+                <div class="social">
+                    <a href="/">
+                        <img src="../../assets/fb_kartis_button.png">
+                    </a>
+                </div>
+                <p>
+                    כמות מנות:
+                </p>
+                <img src="../../assets/up_amount_manot_button.png" class="up" (click)="up('number3')">
+                <div class="number" id="number3">
+                   0
+                </div>
+                <img src="../../assets/down_amount_manot_button.png" class="down" (click)="down('number3')">
+            </div>
+            <p class="price">
+                38 ש״ח
+            </p>
+            <img src="../../assets/hazmaen_mishloah.png" class="mishloah" (click)="hazmen()">
+            <div class="mishloah_text" (click)="hazmen()" class="mishloah_text">
+                הזמן משלוח
+            </div>
+        </div>
+    </div>
+    <!-- details details1 animation ------------------------------------------>
+    <div class="details_bg" [@details1]="details1">
+        <img src="../../assets/x_button.png" class="x_button" (click)="abort()">
+        <h2>
+            פרטי משלוח
+        </h2>
+        <input type="text" class="input" id="firstName" [(ngModel)]="user.name">
+        <input type="text" class="input" id="email" [(ngModel)]="user.email">
+        <input type="text" class="input" id="phone" [(ngModel)]="user.phone">
+        <input type="text" class="input" id="address" [(ngModel)]="user.address">
+        <input type="text" class="input" id="city" [(ngModel)]="user.city">
+        <div class="price2">
+           סה״כ לתשלום:
+        </div>
+        <div class="price_val" id="price_val">
+
+        </div>
+        <span class="price_val_sh">
+                ש״ח
+        </span>
+        <div class="inst_details">
+            <a href="/">
+                <img src="../../assets/inst_symb_small.png">
+            </a>
+        </div>
+        <div class="goog_details">
+            <a href="/">
+                <img src="../../assets/goog_symb_small.png">
+            </a>
+        </div>
+        <div class="fb_details">
+            <a href="/">
+                <img src="../../assets/fb_symb_small.png">
+            </a>
+        </div>
+        <div class="haz_details">
+            <img src="../../assets/hazmaen_mishloah2.png" (click)="hazmen2()">
+        </div>
+    </div>
+    <!-- details details2 animation ------------------------------------------>
+    <div class="details_bg2" [@details2]="details2">
+        <img src="../../assets/x_button.png" class="x_button" (click)="abort()">
+        <h2>
+            פרטי תשלום
+        </h2>
+        <input type="text" class="short_input input" id="sug_kartis" [(ngModel)]="card.type">
+        <input type="text" class="short_input input" id="payments" [(ngModel)]="card.payments">
+        <input type="text" class="long_input input" id="card_number"
+               [(ngModel)]="card.number" (mouseover)="showCreditExamp()" (mouseleave)="showCreditExamp()">
+        <p class="creditExmp" [@creditExmp]="creditExmp">יש להזין ספרות בלבד לדוגמה: 4580100316924554</p>
+        <input type="text" class="long_input input" id="cvv" [(ngModel)]="card.cvv">
+        <input type="text" class="short_input input" id="month" [(ngModel)]="card.month">
+        <input type="text" class="short_input input" id="year" [(ngModel)]="card.year">
+        <div class="price2">
+            סה״כ לתשלום:
+        </div>
+        <div class="price_val" id="price_val2">
+
+        </div>
+        <span class="price_val_sh">
+                ש״ח
+        </span>
+        <div class="inst_details">
+            <a href="/">
+                <img src="../../assets/inst_symb_small.png">
+            </a>
+        </div>
+        <div class="goog_details">
+            <a href="/">
+                <img src="../../assets/goog_symb_small.png">
+            </a>
+        </div>
+        <div class="fb_details">
+            <a href="/">
+                <img src="../../assets/fb_symb_small.png">
+            </a>
+        </div>
+        <div class="haz_details">
+            <img src="../../assets/hazmaen_mishloah2.png" (click)="hazmen3()">
+        </div>
+        <!--card type animation ---------------------------------------------->
+        <img src="../../assets/arrow_down_creditcard.png" id="arrow1" class="arrow" (click)="dropDownShowHide('dropdown1')">
+        <div class="dropdown-content" id="dropdown1" [@dropdown1]="dropdown1">
+            <p style="width:35px" (click)="dropDownChange('cardtype','ויזה')">ויזה</p>
+            <p style="width:78px" (click)="dropDownChange('cardtype','ישראכרט')" >ישראכארט</p>
+            <p style="width:73px" (click)="dropDownChange('cardtype','מאסטרכד')">מאסטרכד</p>
+            <p style="width:51px" (click)="dropDownChange('cardtype','דיינרס')">דיינרס</p>
+            <p style="width:71px" (click)="dropDownChange('cardtype','אמריקן א')">אמריקן א</p>
+        </div>
+
+        <!--payments animation ------------------------------------------------>
+        <img src="../../assets/arrow_down_creditcard.png" id="arrow2" class="arrow" (click)="dropDownShowHide('dropdown2')">
+        <div class="dropdown-content" id="dropdown2" [@dropdown2]="dropdown2">
+            <p style="width:18px" (click)="dropDownChange('payments','1')">1</p>
+            <p style="width:18px" (click)="dropDownChange('payments','2')">2</p>
+            <p style="width:18px" (click)="dropDownChange('payments','3')">3</p>
+            <p style="width:18px" (click)="dropDownChange('payments','4')">4</p>
+            <p style="width:18px" (click)="dropDownChange('payments','5')">5</p>
+        </div>
+
+        <!--month animation --------------------------------------------------->
+        <img src="../../assets/arrow_down_creditcard.png" id="arrow3" class="arrow" (click)="dropDownShowHide('dropdown3')">
+        <div class="dropdown-content" id="dropdown3" [@dropdown3]="dropdown3">
+            <p style="width:22px" (click)="dropDownChange('month','1')">1</p>
+            <p style="width:22px" (click)="dropDownChange('month','2')">2</p>
+            <p style="width:22px" (click)="dropDownChange('month','3')">3</p>
+            <p style="width:22px" (click)="dropDownChange('month','4')">4</p>
+            <p style="width:22px" (click)="dropDownChange('month','5')">5</p>
+            <p style="width:22px" (click)="dropDownChange('month','6')">6</p>
+            <p style="width:22px" (click)="dropDownChange('month','7')">7</p>
+            <p style="width:22px" (click)="dropDownChange('month','8')">8</p>
+            <p style="width:22px" (click)="dropDownChange('month','9')">9</p>
+            <p style="width:22px" (click)="dropDownChange('month','10')">10</p>
+            <p style="width:22px" (click)="dropDownChange('month','11')">11</p>
+            <p style="width:22px" (click)="dropDownChange('month','12')">12</p>
+        </div>
+
+        <!--year animation --------------------------------------------------->
+        <img src="../../assets/arrow_down_creditcard.png" id="arrow4" class="arrow" (click)="dropDownShowHide('dropdown4')">
+        <div class="dropdown-content" id="dropdown4" [@dropdown4]="dropdown4">
+            <p style="width:42px" (click)="dropDownChange('year','2017')">2017</p>
+            <p style="width:42px" (click)="dropDownChange('year','2018')">2018</p>
+            <p style="width:42px" (click)="dropDownChange('year','2019')">2019</p>
+            <p style="width:42px" (click)="dropDownChange('year','2020')">2020</p>
+            <p style="width:42px" (click)="dropDownChange('year','2021')">2021</p>
+        </div>
+    </div>
+    <!-- summary card animation ----------------------------------------------->
+    <div class="order_summary" [@summary]="summary">
+        <div class="wraper">
+            <img src="../../assets/x_button.png" class="x_button" (click)="abort()">
+            <div class="headline">
+                <h2>
+סיכום הזמנה
+                </h2>
+                <span>
+                את/ה הזמנת:
+                </span>
+            </div>
+            <div id="product_one" class="product">
+                    <div id="teor1" class="right" style="width:20%">ספגטי בולונז</div>
+                    <div id="kamut1" class="right" style="width:5%"></div>
+                    <div id="yehidut1" class="right" style="width:35%">יחידות</div>
+                    <div id="sahakol1" class="right" style="width:20%">סה״כ עלות</div>
+                    <div id="sahakol2" class="right" style="width:20%"></div>
+            </div>
+            <div id="product_two" class="product">
+                <div id="teor2" class="right" style="width:20%">ספגטי בולונז2</div>
+                <div id="kamut2" class="right" style="width:5%">2</div>
+                <div id="yehidut2" class="right" style="width:35%">יחידות</div>
+                <div id="sahakol3" class="right" style="width:20%">סה״כ עלות</div>
+                <div id="sahakol4" class="right" style="width:20%"></div>
+            </div>
+            <div id="product_three" class="product">
+                <div id="teor3" class="right" style="width:20%">ספגטי בולונז3</div>
+                <div id="kamut3" class="right" style="width:5%">2</div>
+                <div id="yehidut3" class="right" style="width:35%">יחידות</div>
+                <div id="sahakol5" class="right" style="width:20%">סה״כ עלות</div>
+                <div id="sahakol6" class="right" style="width:20%"></div>
+            </div>
+            <div id="final_summary">
+                <div class="final" id="final">100</div>
+                <div class="final2">ש״ח</div>
+            </div>
+            <div id="credit" class="credit">
+                4 ספרות אחרונות של האשראי:
+            </div>
+            <div id="credit4" class="credit">
+1234
+            </div>
+            <button class="btn" type="submit" (click)="hazmen4()">שלח</button>
+        </div>
+    </div>
+    <h4 class="thank-you" [@thankyou]="thankyou">
+        הזמנתך נשמרה במערכת בהצלחה. המשלוח בדרך...
+    </h4>
+</section>

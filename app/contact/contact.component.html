@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<section id="main">
+  <div class="container">
+      <div class="strip">
+          <div class="menu">
+          <div class="wrod1 word">
+              <a [routerLink]="['/homepage']">בית</a>
+          </div>
+          <div class="word2 word">
+              <a [routerLink]="['/menu']">תפריט</a>
+          </div>
+          <div class="word3 word">
+              <a [routerLink]="['/about']">אודות</a>
+          </div>
+          <div class="word4 word">
+              <a [routerLink]="['/contact']">צור קשר</a>
+          </div>
+      </div>
+          <div class="mish">
+        משלוחים 077-414-2015
+      </div>
+      </div>
+      <h3>
+        שמור על קשר
+      </h3>
+      <p>
+          רחוב הברזל 23, רמת החייל 842351
+      </p>
+      <div class="map" id="mymap"></div>
+  </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <h4 [@formState]="formState">
+            <span class="more" >
+                רוצים לשמוע עוד?
+            </span>
+            השאירו פרטים ונציגנו יחזור אליך בהקדם!
+        </h4>
+        <h4 class="thank-you" [@formState]="thankYouState">
+           פרטיך נקלטו ונשמרו במערכת. נציגנו יחזרו אליך בהקדם.
+        </h4>
+        <form (ngSubmit)="onSubmit(f)" #f="ngForm" [@formState]="formState">
+            <input type="text"
+                   required
+                   id="name"
+                   name="name"
+                   placeholder="שם מלא:"
+                   ngModel
+                   #name="ngModel"
+                    >
+            <span *ngIf="!name.valid" class="name_check">
+                יש להזין שם
+            </span>
+            <input type="text"
+                   required
+                   id="email"
+                   pattern="[a-z0-9]+@[a-z]+(\.){1}[a-z]{3}"
+                   name="email"
+                   placeholder="מייל:"
+                   ngModel
+                   #email="ngModel"
+
+            >
+            <span *ngIf="!email.valid" class="email_check">
+            יש להזין מייל בפורמט המתאים
+            </span>
+            <input type="text"
+                   required
+                   id="mobile"
+                   placeholder="טלפון:"
+                   pattern="[0-9]{3}-[0-9]{7}"
+                   name="mobile"
+                   ngModel
+                   #phone="ngModel"
+            >
+            <span *ngIf="!phone.valid" class="phone_check">
+            יש להזין כך: 054-5887733
+            </span>
+            <button class="btn" type="submit">שלח</button>
+        </form>
+        <div class="social">
+            <div class="fb symb">
+                <a href="https://www.facebook.com/mazi.leon" target="new">
+                    <img src="../../assets/fb_symb.png">
+                </a>
+            </div>
+            <div class="goog symb">
+                <a href="http://www.google.com"  target="new">
+                    <img src="../../assets/goog_symb.png">
+                </a>
+            </div>
+            <div class="inst symb">
+                <a href="https://www.instagram.com" target="new">
+                    <img src="../../assets/tw_symb.png" target="new">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
