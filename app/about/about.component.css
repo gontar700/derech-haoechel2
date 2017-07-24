@@ -145,6 +145,14 @@ ol li {
     float:right;
     margin: 20px 0;
 }
+#header .navbar
+{
+    display: none;
+}
+#header .dropdown-content
+{
+    display: none;
+}
 #header .word
 {
     display: inline-block;
@@ -165,7 +173,7 @@ ol li {
 }
 #header .mish {
     float: left;
-    margin: 20px 20px;
+    margin: 26px 20px;
     font-family: "fblight";
 }
 #about
@@ -226,4 +234,139 @@ ol li {
     position: absolute;
     top:585px;
     left:0;
+}
+@media screen and (max-width:1150px)
+{
+    #about h3
+    {
+        margin: 78px 470px 50px 0;
+    }
+}
+@media screen and (max-width:1150px)
+{
+    #about h3
+    {
+        margin: 78px 410px 50px 0;
+    }
+    #about p
+    {
+        font-size: 18px;
+        width: 97%;
+        margin: 15px;
+    }
+}
+@media screen and (max-width:1150px)
+{
+    #about h3
+    {
+        margin: 78px 430px 50px 0;
+    }
+}
+@media screen and (max-width:900px)
+{
+    #about h3
+    {
+        margin: 78px 325px 50px 0;
+    }
+}
+@media screen and (max-width:750px)
+{
+    #about h3
+    {
+        margin: 78px 240px 20px 0;
+    }
+}
+@media screen and (max-width:700px)
+{
+    #about p
+    {
+        font-size: 15px;
+        width: 97%;
+        margin: 15px;
+    }
+}
+@media screen and (max-width:600px)
+{
+    #about h3
+    {
+        margin: 78px 210px 20px 0;
+    }
+    #about p
+    {
+        font-size: 13px;
+        width: 97%;
+        margin: 12px;
+    }
+}
+@media screen and (max-width:500px)
+{
+    #header .menu
+    {
+        display: none;
+    }
+    #header .navbar
+    {
+        display: block;
+    }
+    #header .navbar img
+    {
+        width: 40px;
+        height: 31px;
+        position: absolute;
+        top: 13px;
+        right: 20px;
+    }
+    #header .dropdown-content
+    {
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 10px;
+        width: 65px;
+        height: 100px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 9999;
+        overflow: hidden;
+        text-align: center;
+    }
+    #header .dropdown-content a
+    {
+        line-height: 25px;
+        color: #c69c6d;
+        text-decoration: none;
+    }
+    #about h3
+    {
+        margin: 78px 120px 20px 0;
+    }
+    #about p
+    {
+        margin-top: -11px;
+        font-size: 10px;
+    }
+    #about .slider
+    {
+
+        width: 100%;
+        background: transparent;
+        height: 436px;
+    }
+}
+@media screen and (max-width:361px)
+{
+    #about h3
+    {
+        margin: 78px 75px 20px 0;
+        font-size: 50px;
+    }
+    #about p
+    {
+        font-size: 11px;
+        word-spacing: 0;
+    }
+    #header .dropdown-content
+    {
+        width: 60px;
+    }
 }
