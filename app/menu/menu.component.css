@@ -137,6 +137,14 @@ ol li {
     float:right;
     margin: 20px 0;
 }
+#header .navbar
+{
+    display: none;
+}
+#header .dropdown-content
+{
+    display: none;
+}
 #header .word
 {
     display: inline-block;
@@ -158,7 +166,7 @@ ol li {
 #header .mish
 {
     float: left;
-    margin: 20px 20px;
+    margin: 26px 20px;
     font-family: "fblight";
 }
 #menu
@@ -195,7 +203,6 @@ ol li {
     overflow: hidden;
     float: left;
 }
-
 #menu .portfolio2
 {
     width: auto;
@@ -227,7 +234,6 @@ ol li {
     color:#262626;
     width: 346px;
     height: 389px;
-
 }
 #menu .x_button
 {
@@ -336,7 +342,7 @@ ol li {
 {
     position: absolute;
     top: 439px;
-    left: 1076px;
+    left: 1070px;
 }
 .img:hover
 {
@@ -546,7 +552,8 @@ ol li {
     top: 311px;
     right: 476px;
 }
-.dropdown-content{
+.dropdown-content
+{
     position: absolute;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -694,4 +701,200 @@ ol li {
     font-size: 50px;
     font-family: "fbbold";
     font-style: italic;
+}
+@media screen and (max-width:1150px)
+{
+    #menu h3
+    {
+        margin: 76px 420px 48px 0;
+        font-size: 45px;
+    }
+
+    #menu .visitcard_bg
+    {
+        top: 180px;
+        left: 110px;
+    }
+
+    #menu .switch_left
+    {
+        left: 79px;
+    }
+
+    #menu .switch_right
+    {
+        left: 876px;
+    }
+}
+@media screen and (max-width:900px)
+{
+    #menu h3
+    {
+        margin: 76px 320px 48px 0;
+        font-size: 45px;
+    }
+    #menu .visitcard_bg
+    {
+        left: 40px;
+    }
+
+    #menu .switch_left
+    {
+        left: 9px;
+    }
+
+    #menu .switch_right
+    {
+        left: 806px;
+    }
+}
+@media screen and (max-width:830px)
+{
+    #menu h3
+    {
+        margin: 76px 220px 48px 0;
+        font-size: 45px;
+    }
+    #menu .visitcard_bg
+    {
+        width: 80%;
+        z-index: 1000;
+    }
+    #menu .wraper
+    {
+        margin: 50px 294px 19px 12px;
+    }
+    #menu .x_button
+    {
+        left: 391px;
+        top: 6px;
+    }
+    #menu h2
+    {
+        font-size:20px;
+    }
+    #menu span
+    {
+        font-size: 13px;
+        margin: 13px 24px 0 0;
+    }
+    #menu p.teor
+    {
+        margin: 20px 0 0 200px;
+        display: block;
+    }
+    #menu .switch_left
+    {
+        left: 136px;
+        top: 133px;
+        z-index: 9999;
+    }
+
+    #menu .switch_right
+    {
+        top: 133px;
+        left: 236px;
+        z-index: 9999;
+    }
+    #menu p
+    {
+        display: none;
+    }
+}
+@media screen and (max-width:600px)
+{
+    #menu .x_button
+    {
+        left: 334px;
+        top: 6px;
+    }
+    #menu .wraper
+    {
+        margin: 65px 94px 19px 12px;
+    }
+}
+@media screen and (max-width:500px)
+{
+    #menu h3
+    {
+        margin: 76px 90px 48px 0;
+        font-size: 40px;
+    }
+    #header .menu
+    {
+        display: none;
+    }
+    #header .navbar
+    {
+        display: block;
+        position: absolute;
+        left: 493px;
+    }
+    #header .navbar img
+    {
+        width: 40px;
+        height: 31px;
+        position: absolute;
+        top: 13px;
+        right: 20px;
+    }
+    #header .dropdown-content
+    {
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 418px;
+        width: 65px;
+        height: 100px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 9999;
+        overflow: hidden;
+        text-align: center;
+    }
+    #header .dropdown-content a
+    {
+        line-height: 25px;
+        color: #c69c6d;
+        text-decoration: none;
+    }
+    #menu .x_button
+    {
+        left: 264px;
+    }
+}
+@media screen and (max-width:420px)
+{
+    #header .navbar
+    {
+        left: 413px;
+    }
+    #header .dropdown-content
+    {
+        left: 338px;
+    }
+}
+@media screen and (max-width:361px)
+{
+    #menu h3
+    {
+        margin: 76px 68px 48px 0;
+    }
+    #header .navbar img
+    {
+        right: 70px;
+    }
+    #header .dropdown-content
+    {
+        left: 283px;
+        width: 60px;
+    }
+    #menu .x_button
+    {
+        left: 240px;
+    }
+    #menu .social
+    {
+        display: none;
+    }
 }
