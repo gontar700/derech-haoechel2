@@ -141,6 +141,14 @@ ol li {
     float:right;
     margin: 20px 0;
 }
+#main .navbar
+{
+    display: none;
+}
+#main .dropdown-content
+{
+    display: none;
+}
 #main .word
 {
     display: inline-block;
@@ -159,9 +167,10 @@ ol li {
 {
     border-bottom: 10px solid #c69c6d;
 }
-#main .mish {
+#main .mish
+{
     float: left;
-    margin: 20px 20px;
+    margin: 26px 20px;
     font-family: "fblight";
 }
 #main h3
@@ -275,4 +284,174 @@ ol li {
     font-size: 14px;
     font-family: "fblight";
     color: #c69c6d;
+}
+
+@media screen and (max-width: 1250px)
+{
+    #contact .btn
+    {
+        width: 115px;
+        font-size: 21px;
+        margin: 0 12px 0 0;
+    }
+    #contact .name_check , #contact .email_check ,  #contact .phone_check
+    {
+        display:none;
+    }
+}
+@media screen and (max-width: 1150px)
+{
+    #main h3
+    {
+        margin: 60px 430px 25px 0;
+    }
+    #main p
+    {
+        margin: 16px 406px 40px 0;
+    }
+}
+
+@media screen and (max-width: 1080px)
+{
+    #contact input
+    {
+        width: 212px;
+    }
+}
+@media screen and (max-width: 950px)
+{
+    #contact h4
+    {
+        margin: 35px 100px 0 0;
+        font-size: 22px;
+    }
+    #contact .social
+    {
+        margin: 42px 282px 32px 0;
+    }
+    #main h3
+    {
+        margin: 60px 370px 25px 0;
+    }
+    #main p
+    {
+        margin: 16px 346px 40px 0;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    #contact .btn
+    {
+        width: 80px;
+        font-size: 18px;
+        margin: 0 12px 0 0;
+    }
+    #main h3
+    {
+        margin: 60px 270px 25px 0;
+    }
+    #main p
+    {
+        margin: 16px 246px 40px 0;
+    }
+}
+@media screen and (max-width: 750px)
+{
+    #contact input,#contact .btn,#contact h4,#contact .social
+    {
+        margin: 20px;
+        width: 90%;
+        float: right;
+    }
+    #contact h4
+    {
+        font-size: 18px;
+    }
+    #main h3
+    {
+        margin: 60px 170px 25px 0;
+    }
+    #main p
+    {
+        margin: 16px 146px 40px 0;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    #main h3
+    {
+        margin: 60px 100px 25px 0;
+        font-size: 35px;
+    }
+    #main p
+    {
+        margin: 16px 76px 40px 0;
+        font-size: 17px;
+    }
+    #main .menu
+    {
+        display: none;
+    }
+    #main .navbar
+    {
+        display: block;
+    }
+    #main .navbar img
+    {
+        width: 40px;
+        height: 31px;
+        position: absolute;
+        top: 13px;
+        right: 20px;
+    }
+    #main .dropdown-content
+    {
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 10px;
+        width: 65px;
+        height: 100px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 9999;
+        overflow: hidden;
+        text-align: center;
+    }
+    #main .dropdown-content a
+    {
+        line-height: 25px;
+        color: #c69c6d;
+        text-decoration: none;
+    }
+    #contact h4
+    {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 420px)
+{
+    #contact h4
+    {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 361px)
+{
+    #main h3
+    {
+        margin: 60px 72px 25px 0;
+    }
+    #main p
+    {
+        margin: 16px 48px 40px 0;
+    }
+    #contact h4
+    {
+        font-size: 12px;
+    }
+    #main .dropdown-content
+    {
+        width: 60px;
+    }
 }
